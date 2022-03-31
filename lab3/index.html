@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lab 3</title>
+</head>
+<body>
+	<style>
+		body {
+			display: flex;
+		}
+		.nod {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-right: 30px;
+		}
+	</style>
+	<div id="nod" class="nod">
+		<h3>Нахождение НОД</h3>
+		<input class="nod-number" placeholder="Число 1" type="number">
+		<input class="nod-number" placeholder="Число 2" type="number">
+		<input class="nod-number" placeholder="Число 3" type="number">
+		<button id="nod-calc">Найти НОД</button>
+		<input id="nod-res" type="number">
+	</div>
+
+	<div id="erat" class="erat">
+		<h3>Решето Эратосфена</h3>
+		<div>
+			<input class="interval-input" type="number" placeholder="Число 1">
+			<input class="interval-input" type="number" placeholder="Число 2">
+		</div>
+		<button id="erat-calc">Расчитать</button>
+		<div id="erat-res"></div>
+	</div>
+
+	<script src="nod.js"></script>
+	<script src="sieve.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
