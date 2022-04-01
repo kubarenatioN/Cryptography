@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .wrapper {
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .res,
+        textarea {
+            font-family: monospace;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #ccc;
+            resize: none;
+        }
+        .panel {
+            display: flex;
+            flex-direction: column;
+        }
+        .stats__wrapper {
+            display: flex;
+            width: 100%;
+        }
+        .canvas__wrapper {
+            width: 50%;
+        }
+        canvas {
+            width: 100%;
+        }
+    </style>
+    <select id="mode" class="encoding-mode-select">
+        <option value="0">Афинный шифр</option>
+        <option value="1">Шифр Порты</option>
+    </select>
+    <div class="wrapper">
+        <div class="panel">
+            <textarea type="text" id="message">venividivici</textarea>
+            <textarea class="res" id="encode-res"></textarea>
+            <button id="encode-btn">Зашифровать</button>
+        </div>
+
+        <div class="panel">
+            <textarea type="text" id="cypher">He dwllo  yahrolorouew </textarea>
+            <textarea class="res" id="decode-res"></textarea>
+            <button id="decode-btn">Расшифровать</button>
+        </div>
+    </div>
+
+    <div class="stats__wrapper">
+        <div class="canvas__wrapper">
+            <canvas id="encode-chart"></canvas>
+        </div>
+        <div class="canvas__wrapper">
+            <canvas id="decode-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="matrix.helper.js"></script>
+    <script src="gcd.js"></script>
+    <script src="caesar.js"></script>
+    <script src="porta.js"></script>
+    
+    <script src="graph.js"></script>
+
+    <script src="app.js"></script>
+</body>
+</html>
