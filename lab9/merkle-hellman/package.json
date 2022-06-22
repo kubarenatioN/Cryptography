@@ -1,0 +1,72 @@
+{
+  "_from": "merkle-hellman",
+  "_id": "merkle-hellman@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-L+OALMWOlyc0L1PO4Stjv7LJAM4=",
+  "_location": "/merkle-hellman",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "merkle-hellman",
+    "name": "merkle-hellman",
+    "escapedName": "merkle-hellman",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://bams-aws.refinitiv.com/artifactory/api/npm/default.npm.global/merkle-hellman/-/merkle-hellman-2.0.0.tgz",
+  "_shasum": "2fe3802cc58e9727342f53cee12b63bfb2c900ce",
+  "_spec": "merkle-hellman",
+  "_where": "C:\\univer\\crypto\\Cryptography\\lab9",
+  "author": {
+    "name": "Vladislav Tupikin",
+    "email": "mrrefactoring@yandex.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/MrRefactoring/merkle-hellman/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Decoder, Encoder and Cracker for Merkle–Hellman knapsack cryptosystem",
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "@types/node": "^12.11.7",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  },
+  "homepage": "https://github.com/MrRefactoring/merkle-hellman#readme",
+  "keywords": [
+    "merkle-hellman",
+    "cryptosystem",
+    "knapsack",
+    "hacking",
+    "cracking",
+    "attack",
+    "merkle",
+    "hellman"
+  ],
+  "license": "MIT",
+  "main": "out/index.js",
+  "name": "merkle-hellman",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrRefactoring/merkle-hellman.git"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "lint": "tslint src/**/*.ts",
+    "lint:fix": "npm run lint -- --fix",
+    "prepublishOnly": "npm run lint && npm run compile",
+    "test": "npm run compile && jest --collect-coverage"
+  },
+  "types": "out/index.d.ts",
+  "version": "2.0.0"
+}
